@@ -15,7 +15,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @b
 		SET @start_time = GETDATE();
 		TRUNCATE TABLE bronze.short_term_rental_registration_data;
 		BULK INSERT bronze.short_term_rental_registration_data
-		FROM 'C:\Users\olegk\Desktop\Data\short_term_rental_registrations_data.csv'
+		---Replace the path---
+		FROM 'C:\Users\****\******\short_term_rental_registrations_data.csv'
 		WITH (
 			firstrow = 2,
 			FIELDTERMINATOR = ',',
@@ -31,7 +32,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @b
 		SET @start_time = GETDATE();
 		TRUNCATE TABLE bronze.cleared_building_permits;
 		BULK INSERT bronze.cleared_building_permits
-		FROM 'C:\Users\olegk\Desktop\Data\cleared_building_permits.csv'
+		---Replace the path---
+		FROM 'C:\Users\****\******\cleared_building_permits.csv'
 		WITH (
 			firstrow = 2,
 			FIELDTERMINATOR = ',',
@@ -47,7 +49,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @b
 		SET @start_time = GETDATE();
 		TRUNCATE TABLE bronze.active_building_permits;
 		BULK INSERT bronze.active_building_permits
-		FROM 'C:\Users\olegk\Desktop\Data\active_building_permits.csv'
+		---Replace the path---
+		FROM 'C:\Users\****\******\active_building_permits.csv'
 		WITH (
 			firstrow = 2,
 			FIELDTERMINATOR = ',',
