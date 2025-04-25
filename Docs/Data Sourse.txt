@@ -1,0 +1,5 @@
+All the data that is being used in the project is available on Toronto.ca
+
+Building Permits - Active Permits: https://open.toronto.ca/dataset/building-permits-active-permits/
+Building Permits - Cleared Permits: https://open.toronto.ca/dataset/building-permits-cleared-permits/
+Short Term Rentals Registration: https://open.toronto.ca/dataset/short-term-rentals-registration/
